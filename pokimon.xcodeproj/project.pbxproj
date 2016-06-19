@@ -1,0 +1,508 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		998DB7BA1D1693A300064090 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998DB7B91D1693A300064090 /* AppDelegate.swift */; };
+		998DB7BC1D1693A300064090 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998DB7BB1D1693A300064090 /* ViewController.swift */; };
+		998DB7BF1D1693A400064090 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 998DB7BD1D1693A400064090 /* Main.storyboard */; };
+		998DB7C11D1693A500064090 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 998DB7C01D1693A500064090 /* Assets.xcassets */; };
+		998DB7C41D1693A500064090 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 998DB7C21D1693A500064090 /* LaunchScreen.storyboard */; };
+		998DB7CF1D1693A700064090 /* pokimonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998DB7CE1D1693A700064090 /* pokimonTests.swift */; };
+		998DB7DA1D1693A900064090 /* pokimonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998DB7D91D1693A900064090 /* pokimonUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		998DB7CB1D1693A600064090 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 998DB7AE1D1693A000064090 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 998DB7B51D1693A100064090;
+			remoteInfo = pokimon;
+		};
+		998DB7D61D1693A800064090 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 998DB7AE1D1693A000064090 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 998DB7B51D1693A100064090;
+			remoteInfo = pokimon;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		998DB7B61D1693A100064090 /* pokimon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pokimon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		998DB7B91D1693A300064090 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		998DB7BB1D1693A300064090 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		998DB7BE1D1693A400064090 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		998DB7C01D1693A500064090 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		998DB7C31D1693A500064090 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		998DB7C51D1693A600064090 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		998DB7CA1D1693A600064090 /* pokimonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pokimonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		998DB7CE1D1693A700064090 /* pokimonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pokimonTests.swift; sourceTree = "<group>"; };
+		998DB7D01D1693A800064090 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		998DB7D51D1693A800064090 /* pokimonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pokimonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		998DB7D91D1693A900064090 /* pokimonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pokimonUITests.swift; sourceTree = "<group>"; };
+		998DB7DB1D1693AD00064090 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		998DB7B31D1693A100064090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		998DB7C71D1693A600064090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		998DB7D21D1693A800064090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		998DB7AD1D1693A000064090 = {
+			isa = PBXGroup;
+			children = (
+				998DB7B81D1693A300064090 /* pokimon */,
+				998DB7CD1D1693A600064090 /* pokimonTests */,
+				998DB7D81D1693A900064090 /* pokimonUITests */,
+				998DB7B71D1693A100064090 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		998DB7B71D1693A100064090 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				998DB7B61D1693A100064090 /* pokimon.app */,
+				998DB7CA1D1693A600064090 /* pokimonTests.xctest */,
+				998DB7D51D1693A800064090 /* pokimonUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		998DB7B81D1693A300064090 /* pokimon */ = {
+			isa = PBXGroup;
+			children = (
+				998DB7B91D1693A300064090 /* AppDelegate.swift */,
+				998DB7BB1D1693A300064090 /* ViewController.swift */,
+				998DB7BD1D1693A400064090 /* Main.storyboard */,
+				998DB7C01D1693A500064090 /* Assets.xcassets */,
+				998DB7C21D1693A500064090 /* LaunchScreen.storyboard */,
+				998DB7C51D1693A600064090 /* Info.plist */,
+			);
+			path = pokimon;
+			sourceTree = "<group>";
+		};
+		998DB7CD1D1693A600064090 /* pokimonTests */ = {
+			isa = PBXGroup;
+			children = (
+				998DB7CE1D1693A700064090 /* pokimonTests.swift */,
+				998DB7D01D1693A800064090 /* Info.plist */,
+			);
+			path = pokimonTests;
+			sourceTree = "<group>";
+		};
+		998DB7D81D1693A900064090 /* pokimonUITests */ = {
+			isa = PBXGroup;
+			children = (
+				998DB7D91D1693A900064090 /* pokimonUITests.swift */,
+				998DB7DB1D1693AD00064090 /* Info.plist */,
+			);
+			path = pokimonUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		998DB7B51D1693A100064090 /* pokimon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 998DB7DE1D1693AD00064090 /* Build configuration list for PBXNativeTarget "pokimon" */;
+			buildPhases = (
+				998DB7B21D1693A100064090 /* Sources */,
+				998DB7B31D1693A100064090 /* Frameworks */,
+				998DB7B41D1693A100064090 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = pokimon;
+			productName = pokimon;
+			productReference = 998DB7B61D1693A100064090 /* pokimon.app */;
+			productType = "com.apple.product-type.application";
+		};
+		998DB7C91D1693A600064090 /* pokimonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 998DB7E11D1693AD00064090 /* Build configuration list for PBXNativeTarget "pokimonTests" */;
+			buildPhases = (
+				998DB7C61D1693A600064090 /* Sources */,
+				998DB7C71D1693A600064090 /* Frameworks */,
+				998DB7C81D1693A600064090 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				998DB7CC1D1693A600064090 /* PBXTargetDependency */,
+			);
+			name = pokimonTests;
+			productName = pokimonTests;
+			productReference = 998DB7CA1D1693A600064090 /* pokimonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		998DB7D41D1693A800064090 /* pokimonUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 998DB7E41D1693AD00064090 /* Build configuration list for PBXNativeTarget "pokimonUITests" */;
+			buildPhases = (
+				998DB7D11D1693A800064090 /* Sources */,
+				998DB7D21D1693A800064090 /* Frameworks */,
+				998DB7D31D1693A800064090 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				998DB7D71D1693A800064090 /* PBXTargetDependency */,
+			);
+			name = pokimonUITests;
+			productName = pokimonUITests;
+			productReference = 998DB7D51D1693A800064090 /* pokimonUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		998DB7AE1D1693A000064090 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = akraywcom.com;
+				TargetAttributes = {
+					998DB7B51D1693A100064090 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = FK7LP84J24;
+					};
+					998DB7C91D1693A600064090 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = FK7LP84J24;
+						TestTargetID = 998DB7B51D1693A100064090;
+					};
+					998DB7D41D1693A800064090 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = FK7LP84J24;
+						TestTargetID = 998DB7B51D1693A100064090;
+					};
+				};
+			};
+			buildConfigurationList = 998DB7B11D1693A000064090 /* Build configuration list for PBXProject "pokimon" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 998DB7AD1D1693A000064090;
+			productRefGroup = 998DB7B71D1693A100064090 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				998DB7B51D1693A100064090 /* pokimon */,
+				998DB7C91D1693A600064090 /* pokimonTests */,
+				998DB7D41D1693A800064090 /* pokimonUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		998DB7B41D1693A100064090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				998DB7C41D1693A500064090 /* LaunchScreen.storyboard in Resources */,
+				998DB7C11D1693A500064090 /* Assets.xcassets in Resources */,
+				998DB7BF1D1693A400064090 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		998DB7C81D1693A600064090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		998DB7D31D1693A800064090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		998DB7B21D1693A100064090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				998DB7BC1D1693A300064090 /* ViewController.swift in Sources */,
+				998DB7BA1D1693A300064090 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		998DB7C61D1693A600064090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				998DB7CF1D1693A700064090 /* pokimonTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		998DB7D11D1693A800064090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				998DB7DA1D1693A900064090 /* pokimonUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		998DB7CC1D1693A600064090 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 998DB7B51D1693A100064090 /* pokimon */;
+			targetProxy = 998DB7CB1D1693A600064090 /* PBXContainerItemProxy */;
+		};
+		998DB7D71D1693A800064090 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 998DB7B51D1693A100064090 /* pokimon */;
+			targetProxy = 998DB7D61D1693A800064090 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		998DB7BD1D1693A400064090 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				998DB7BE1D1693A400064090 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		998DB7C21D1693A500064090 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				998DB7C31D1693A500064090 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		998DB7DC1D1693AD00064090 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		998DB7DD1D1693AD00064090 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		998DB7DF1D1693AD00064090 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = pokimon/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = akrawy.new.com.pokimon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		998DB7E01D1693AD00064090 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = pokimon/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = akrawy.new.com.pokimon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		998DB7E21D1693AD00064090 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = pokimonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = akrawy.new.com.pokimonTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/pokimon.app/pokimon";
+			};
+			name = Debug;
+		};
+		998DB7E31D1693AD00064090 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = pokimonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = akrawy.new.com.pokimonTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/pokimon.app/pokimon";
+			};
+			name = Release;
+		};
+		998DB7E51D1693AD00064090 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = pokimonUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = akrawy.new.com.pokimonUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = pokimon;
+			};
+			name = Debug;
+		};
+		998DB7E61D1693AD00064090 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = pokimonUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = akrawy.new.com.pokimonUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = pokimon;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		998DB7B11D1693A000064090 /* Build configuration list for PBXProject "pokimon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				998DB7DC1D1693AD00064090 /* Debug */,
+				998DB7DD1D1693AD00064090 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		998DB7DE1D1693AD00064090 /* Build configuration list for PBXNativeTarget "pokimon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				998DB7DF1D1693AD00064090 /* Debug */,
+				998DB7E01D1693AD00064090 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		998DB7E11D1693AD00064090 /* Build configuration list for PBXNativeTarget "pokimonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				998DB7E21D1693AD00064090 /* Debug */,
+				998DB7E31D1693AD00064090 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		998DB7E41D1693AD00064090 /* Build configuration list for PBXNativeTarget "pokimonUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				998DB7E51D1693AD00064090 /* Debug */,
+				998DB7E61D1693AD00064090 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 998DB7AE1D1693A000064090 /* Project object */;
+}
