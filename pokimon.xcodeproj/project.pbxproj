@@ -7,7 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E1FEE9639B1194CF699977E /* Pods_pokimonUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C63B8755FBBA42E92691C1D4 /* Pods_pokimonUITests.framework */; };
+		837BD0759FACD930AA601E1D /* Pods_pokimon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F1C8C566FF00C01C782DBC5 /* Pods_pokimon.framework */; };
 		9908F1541D1DB688005E0892 /* csv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9908F1531D1DB688005E0892 /* csv.swift */; };
+		990D96381D1F189200C4BC21 /* detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990D96371D1F189200C4BC21 /* detail.swift */; };
+		9944838A1D231E6C00C3282E /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9944837D1D231E4800C3282E /* Alamofire.framework */; };
+		9944838B1D231E6C00C3282E /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9944837D1D231E4800C3282E /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		997685C61D1E9D18005080AA /* Pokemon.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 997685C51D1E9D18005080AA /* Pokemon.ttf */; };
 		998DB7BA1D1693A300064090 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998DB7B91D1693A300064090 /* AppDelegate.swift */; };
 		998DB7BC1D1693A300064090 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998DB7BB1D1693A300064090 /* ViewController.swift */; };
 		998DB7BF1D1693A400064090 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 998DB7BD1D1693A400064090 /* Main.storyboard */; };
@@ -18,9 +24,66 @@
 		99922C0B1D1D48CA00C58701 /* poke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99922C0A1D1D48CA00C58701 /* poke.swift */; };
 		99922C111D1D570700C58701 /* pokeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99922C101D1D570700C58701 /* pokeCell.swift */; };
 		999676AD1D169B7D00E5855F /* pokemon.csv in Resources */ = {isa = PBXBuildFile; fileRef = 999676AC1D169B7D00E5855F /* pokemon.csv */; };
+		9A41C25EA2DF3FD158922D98 /* Pods_pokimonTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23E1FE5E160890D2A2B55160 /* Pods_pokimonTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		9944837C1D231E4800C3282E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 994483721D231E4800C3282E /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+		9944837E1D231E4800C3282E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 994483721D231E4800C3282E /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS Tests";
+		};
+		994483801D231E4800C3282E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 994483721D231E4800C3282E /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4DD67C0B1A5C55C900ED2280;
+			remoteInfo = "Alamofire OSX";
+		};
+		994483821D231E4800C3282E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 994483721D231E4800C3282E /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F829C6B21A7A94F100A2CD59;
+			remoteInfo = "Alamofire OSX Tests";
+		};
+		994483841D231E4800C3282E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 994483721D231E4800C3282E /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CF626EF1BA7CB3E0011A099;
+			remoteInfo = "Alamofire tvOS";
+		};
+		994483861D231E4800C3282E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 994483721D231E4800C3282E /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CF626F81BA7CB3E0011A099;
+			remoteInfo = "Alamofire tvOS Tests";
+		};
+		994483881D231E4800C3282E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 994483721D231E4800C3282E /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4202FE01B667AA100C997FB;
+			remoteInfo = "Alamofire watchOS";
+		};
+		9944838C1D231E6C00C3282E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 994483721D231E4800C3282E /* Alamofire.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
 		998DB7CB1D1693A600064090 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 998DB7AE1D1693A000064090 /* Project object */;
@@ -37,8 +100,27 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		9944838E1D231E6C00C3282E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9944838B1D231E6C00C3282E /* Alamofire.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		23E1FE5E160890D2A2B55160 /* Pods_pokimonTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pokimonTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F1C8C566FF00C01C782DBC5 /* Pods_pokimon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pokimon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9908F1531D1DB688005E0892 /* csv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = csv.swift; sourceTree = "<group>"; };
+		990D96371D1F189200C4BC21 /* detail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = detail.swift; sourceTree = "<group>"; };
+		994483721D231E4800C3282E /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = "Alamofire-swift2.3/Alamofire.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		997685C51D1E9D18005080AA /* Pokemon.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Pokemon.ttf; sourceTree = "<group>"; };
 		998DB7B61D1693A100064090 /* pokimon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pokimon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		998DB7B91D1693A300064090 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		998DB7BB1D1693A300064090 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -55,6 +137,13 @@
 		99922C0A1D1D48CA00C58701 /* poke.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = poke.swift; sourceTree = "<group>"; };
 		99922C101D1D570700C58701 /* pokeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = pokeCell.swift; sourceTree = "<group>"; };
 		999676AC1D169B7D00E5855F /* pokemon.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pokemon.csv; sourceTree = "<group>"; };
+		99F2C442698807F9EBF7C513 /* Pods-pokimon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pokimon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pokimon/Pods-pokimon.debug.xcconfig"; sourceTree = "<group>"; };
+		AFC57564FAE939A03C4A9929 /* Pods-pokimonTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pokimonTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pokimonTests/Pods-pokimonTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BAA2419AAD57B5360C108C0C /* Pods-pokimonUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pokimonUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pokimonUITests/Pods-pokimonUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C63B8755FBBA42E92691C1D4 /* Pods_pokimonUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pokimonUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDFB9495F4514A2841740D34 /* Pods-pokimonUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pokimonUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-pokimonUITests/Pods-pokimonUITests.release.xcconfig"; sourceTree = "<group>"; };
+		DC0EF47904A9F9D396083491 /* Pods-pokimon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pokimon.release.xcconfig"; path = "Pods/Target Support Files/Pods-pokimon/Pods-pokimon.release.xcconfig"; sourceTree = "<group>"; };
+		E00F7840EFD75F04ACB66F2E /* Pods-pokimonTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pokimonTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-pokimonTests/Pods-pokimonTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +151,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				837BD0759FACD930AA601E1D /* Pods_pokimon.framework in Frameworks */,
+				9944838A1D231E6C00C3282E /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +160,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A41C25EA2DF3FD158922D98 /* Pods_pokimonTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,12 +168,40 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E1FEE9639B1194CF699977E /* Pods_pokimonUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6A2D90AB143F398D500F4A34 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				99F2C442698807F9EBF7C513 /* Pods-pokimon.debug.xcconfig */,
+				DC0EF47904A9F9D396083491 /* Pods-pokimon.release.xcconfig */,
+				AFC57564FAE939A03C4A9929 /* Pods-pokimonTests.debug.xcconfig */,
+				E00F7840EFD75F04ACB66F2E /* Pods-pokimonTests.release.xcconfig */,
+				BAA2419AAD57B5360C108C0C /* Pods-pokimonUITests.debug.xcconfig */,
+				CDFB9495F4514A2841740D34 /* Pods-pokimonUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		994483731D231E4800C3282E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9944837D1D231E4800C3282E /* Alamofire.framework */,
+				9944837F1D231E4800C3282E /* Alamofire iOS Tests.xctest */,
+				994483811D231E4800C3282E /* Alamofire.framework */,
+				994483831D231E4800C3282E /* Alamofire OSX Tests.xctest */,
+				994483851D231E4800C3282E /* Alamofire.framework */,
+				994483871D231E4800C3282E /* Alamofire tvOS Tests.xctest */,
+				994483891D231E4800C3282E /* Alamofire.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		998DB7AD1D1693A000064090 = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +209,8 @@
 				998DB7CD1D1693A600064090 /* pokimonTests */,
 				998DB7D81D1693A900064090 /* pokimonUITests */,
 				998DB7B71D1693A100064090 /* Products */,
+				6A2D90AB143F398D500F4A34 /* Pods */,
+				CE0A56C597772648EBC904B7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +227,7 @@
 		998DB7B81D1693A300064090 /* pokimon */ = {
 			isa = PBXGroup;
 			children = (
+				99F006CA1D22F23E00AD0C4B /* frameworks */,
 				99922C0C1D1D55D400C58701 /* model */,
 				99922C0D1D1D55DC00C58701 /* view */,
 				99922C0E1D1D55EA00C58701 /* controller */,
@@ -157,6 +280,7 @@
 			isa = PBXGroup;
 			children = (
 				998DB7BB1D1693A300064090 /* ViewController.swift */,
+				990D96371D1F189200C4BC21 /* detail.swift */,
 			);
 			name = controller;
 			sourceTree = "<group>";
@@ -164,9 +288,28 @@
 		99922C0F1D1D55F400C58701 /* resouce */ = {
 			isa = PBXGroup;
 			children = (
+				997685C51D1E9D18005080AA /* Pokemon.ttf */,
 				999676AC1D169B7D00E5855F /* pokemon.csv */,
 			);
 			name = resouce;
+			sourceTree = "<group>";
+		};
+		99F006CA1D22F23E00AD0C4B /* frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				994483721D231E4800C3282E /* Alamofire.xcodeproj */,
+			);
+			name = frameworks;
+			sourceTree = "<group>";
+		};
+		CE0A56C597772648EBC904B7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8F1C8C566FF00C01C782DBC5 /* Pods_pokimon.framework */,
+				23E1FE5E160890D2A2B55160 /* Pods_pokimonTests.framework */,
+				C63B8755FBBA42E92691C1D4 /* Pods_pokimonUITests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,13 +319,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 998DB7DE1D1693AD00064090 /* Build configuration list for PBXNativeTarget "pokimon" */;
 			buildPhases = (
+				5D4F8F11B1A3846C585DF765 /* [CP] Check Pods Manifest.lock */,
 				998DB7B21D1693A100064090 /* Sources */,
 				998DB7B31D1693A100064090 /* Frameworks */,
 				998DB7B41D1693A100064090 /* Resources */,
+				FE2E7366B012BEE156A5B498 /* [CP] Embed Pods Frameworks */,
+				3A91C97E4A5B178DEF0B6CC4 /* [CP] Copy Pods Resources */,
+				9944838E1D231E6C00C3282E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				9944838D1D231E6C00C3282E /* PBXTargetDependency */,
 			);
 			name = pokimon;
 			productName = pokimon;
@@ -193,9 +341,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 998DB7E11D1693AD00064090 /* Build configuration list for PBXNativeTarget "pokimonTests" */;
 			buildPhases = (
+				C14ADA7F9306349DFDBB95CA /* [CP] Check Pods Manifest.lock */,
 				998DB7C61D1693A600064090 /* Sources */,
 				998DB7C71D1693A600064090 /* Frameworks */,
 				998DB7C81D1693A600064090 /* Resources */,
+				04505A87A461DA2423003D71 /* [CP] Embed Pods Frameworks */,
+				F6F65BE451E7DB38A2D548DB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -211,9 +362,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 998DB7E41D1693AD00064090 /* Build configuration list for PBXNativeTarget "pokimonUITests" */;
 			buildPhases = (
+				4E2631F84CA9E514D60049D6 /* [CP] Check Pods Manifest.lock */,
 				998DB7D11D1693A800064090 /* Sources */,
 				998DB7D21D1693A800064090 /* Frameworks */,
 				998DB7D31D1693A800064090 /* Resources */,
+				4EF8E4F0BC2BCFAAA1D535F3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -262,6 +415,12 @@
 			mainGroup = 998DB7AD1D1693A000064090;
 			productRefGroup = 998DB7B71D1693A100064090 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 994483731D231E4800C3282E /* Products */;
+					ProjectRef = 994483721D231E4800C3282E /* Alamofire.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				998DB7B51D1693A100064090 /* pokimon */,
@@ -271,12 +430,65 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		9944837D1D231E4800C3282E /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 9944837C1D231E4800C3282E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9944837F1D231E4800C3282E /* Alamofire iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire iOS Tests.xctest";
+			remoteRef = 9944837E1D231E4800C3282E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		994483811D231E4800C3282E /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 994483801D231E4800C3282E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		994483831D231E4800C3282E /* Alamofire OSX Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire OSX Tests.xctest";
+			remoteRef = 994483821D231E4800C3282E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		994483851D231E4800C3282E /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 994483841D231E4800C3282E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		994483871D231E4800C3282E /* Alamofire tvOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire tvOS Tests.xctest";
+			remoteRef = 994483861D231E4800C3282E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		994483891D231E4800C3282E /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 994483881D231E4800C3282E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		998DB7B41D1693A100064090 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				998DB7C41D1693A500064090 /* LaunchScreen.storyboard in Resources */,
+				997685C61D1E9D18005080AA /* Pokemon.ttf in Resources */,
 				998DB7C11D1693A500064090 /* Assets.xcassets in Resources */,
 				999676AD1D169B7D00E5855F /* pokemon.csv in Resources */,
 				998DB7BF1D1693A400064090 /* Main.storyboard in Resources */,
@@ -299,11 +511,135 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		04505A87A461DA2423003D71 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-pokimonTests/Pods-pokimonTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3A91C97E4A5B178DEF0B6CC4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-pokimon/Pods-pokimon-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4E2631F84CA9E514D60049D6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4EF8E4F0BC2BCFAAA1D535F3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-pokimonUITests/Pods-pokimonUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D4F8F11B1A3846C585DF765 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C14ADA7F9306349DFDBB95CA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F6F65BE451E7DB38A2D548DB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-pokimonTests/Pods-pokimonTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE2E7366B012BEE156A5B498 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-pokimon/Pods-pokimon-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		998DB7B21D1693A100064090 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				990D96381D1F189200C4BC21 /* detail.swift in Sources */,
 				99922C111D1D570700C58701 /* pokeCell.swift in Sources */,
 				99922C0B1D1D48CA00C58701 /* poke.swift in Sources */,
 				998DB7BC1D1693A300064090 /* ViewController.swift in Sources */,
@@ -331,6 +667,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		9944838D1D231E6C00C3282E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Alamofire iOS";
+			targetProxy = 9944838C1D231E6C00C3282E /* PBXContainerItemProxy */;
+		};
 		998DB7CC1D1693A600064090 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 998DB7B51D1693A100064090 /* pokimon */;
@@ -448,10 +789,13 @@
 		};
 		998DB7DF1D1693AD00064090 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99F2C442698807F9EBF7C513 /* Pods-pokimon.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = pokimon/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = akrawy.new.com.pokimon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -460,10 +804,13 @@
 		};
 		998DB7E01D1693AD00064090 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC0EF47904A9F9D396083491 /* Pods-pokimon.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = pokimon/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = akrawy.new.com.pokimon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -472,6 +819,7 @@
 		};
 		998DB7E21D1693AD00064090 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFC57564FAE939A03C4A9929 /* Pods-pokimonTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = pokimonTests/Info.plist;
@@ -484,6 +832,7 @@
 		};
 		998DB7E31D1693AD00064090 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E00F7840EFD75F04ACB66F2E /* Pods-pokimonTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = pokimonTests/Info.plist;
@@ -496,6 +845,7 @@
 		};
 		998DB7E51D1693AD00064090 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BAA2419AAD57B5360C108C0C /* Pods-pokimonUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = pokimonUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -507,6 +857,7 @@
 		};
 		998DB7E61D1693AD00064090 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDFB9495F4514A2841740D34 /* Pods-pokimonUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = pokimonUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

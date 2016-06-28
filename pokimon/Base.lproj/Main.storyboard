@@ -72,7 +72,7 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="uRm-tf-2DU"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -123,11 +123,91 @@
                     </view>
                     <connections>
                         <outlet property="collection" destination="AeF-Pg-EJ2" id="r0N-c5-fCN"/>
+                        <outlet property="searchbar" destination="uyd-MC-4D0" id="EmZ-Hx-PJI"/>
+                        <segue destination="yf9-Ti-CKo" kind="showDetail" identifier="detail" action="showViewController:sender:" id="Gcc-Eg-8wa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="77" y="250"/>
+            <point key="canvasLocation" x="-714" y="267"/>
+        </scene>
+        <!--Detail-->
+        <scene sceneID="NCh-QT-oq3">
+            <objects>
+                <viewController id="yf9-Ti-CKo" customClass="detail" customModule="pokimon" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kgM-sY-Prn"/>
+                        <viewControllerLayoutGuide type="bottom" id="gbJ-wj-cTn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tJg-zx-gjU">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o9o-El-vNR">
+                                <rect key="frame" x="243" y="369" width="114" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="24p-Ui-rNu"/>
+                                    <constraint firstAttribute="width" constant="42" id="BpU-UH-hsG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="24p-Ui-rNu"/>
+                                        <exclude reference="BpU-UH-hsG"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n8f-CV-BrR">
+                                <rect key="frame" x="20" y="20" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="8if-ew-y8q"/>
+                                    <constraint firstAttribute="height" constant="30" id="YVD-E1-Y4W"/>
+                                </constraints>
+                                <state key="normal" title="back"/>
+                                <connections>
+                                    <action selector="back:" destination="yf9-Ti-CKo" eventType="touchUpInside" id="61h-b8-vQp"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="w23-x6-4jB">
+                                <rect key="frame" x="215" y="248" width="171" height="104"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="104" id="ZGg-wa-4Bm"/>
+                                    <constraint firstAttribute="width" constant="171" id="u8x-JZ-gkm"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="n8f-CV-BrR" firstAttribute="leading" secondItem="tJg-zx-gjU" secondAttribute="leadingMargin" id="1jv-M8-zkz"/>
+                            <constraint firstItem="n8f-CV-BrR" firstAttribute="top" secondItem="kgM-sY-Prn" secondAttribute="bottom" id="Bk5-8x-j3q"/>
+                            <constraint firstItem="w23-x6-4jB" firstAttribute="centerY" secondItem="tJg-zx-gjU" secondAttribute="centerY" id="Fss-p2-hhX"/>
+                            <constraint firstItem="o9o-El-vNR" firstAttribute="centerX" secondItem="tJg-zx-gjU" secondAttribute="centerX" id="H9F-Lv-CPv"/>
+                            <constraint firstItem="o9o-El-vNR" firstAttribute="centerY" secondItem="tJg-zx-gjU" secondAttribute="centerY" id="JG9-VO-XUB"/>
+                            <constraint firstItem="o9o-El-vNR" firstAttribute="top" secondItem="w23-x6-4jB" secondAttribute="bottom" constant="17" id="O65-8j-Cdw"/>
+                            <constraint firstItem="o9o-El-vNR" firstAttribute="centerX" secondItem="tJg-zx-gjU" secondAttribute="centerX" id="ZSx-hc-8Ha"/>
+                            <constraint firstItem="w23-x6-4jB" firstAttribute="centerX" secondItem="tJg-zx-gjU" secondAttribute="centerX" id="ow1-99-7P0"/>
+                            <constraint firstItem="o9o-El-vNR" firstAttribute="centerX" secondItem="tJg-zx-gjU" secondAttribute="centerX" id="s9t-mZ-7kL"/>
+                            <constraint firstItem="o9o-El-vNR" firstAttribute="top" secondItem="w23-x6-4jB" secondAttribute="bottom" constant="18" id="xSx-Qv-KYL"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="H9F-Lv-CPv"/>
+                                <exclude reference="JG9-VO-XUB"/>
+                                <exclude reference="s9t-mZ-7kL"/>
+                                <exclude reference="xSx-Qv-KYL"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="imagep" destination="w23-x6-4jB" id="qJc-x5-4wu"/>
+                        <outlet property="lblname" destination="o9o-El-vNR" id="wmc-cj-3vO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fI3-BM-zxI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-5" y="267"/>
         </scene>
     </scenes>
     <resources>

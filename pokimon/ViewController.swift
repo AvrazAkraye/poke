@@ -7,17 +7,25 @@
 //
 
 import UIKit
+import Alamofire
 
-class ViewController: UIViewController, UICollectionViewDelegate,UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+
+class ViewController: UIViewController, UICollectionViewDelegate,UICollectionViewDataSource, UICollectionViewDelegateFlowLayout ,UISearchBarDelegate{
 
     @IBOutlet weak var collection: UICollectionView!
     
+    @IBOutlet weak var searchbar: UISearchBar!
     var pokemon = [poke]()
+    var fpokemon = [poke]()
+    var inSearchmode = false
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         collection.delegate = self
         collection.dataSource = self
+        searchbar.delegate = self
+        searchbar.returnKeyType = UIReturnKeyType.Done
         parsePokeCsv()
     }
     
@@ -37,6 +45,7 @@ class ViewController: UIViewController, UICollectionViewDelegate,UICollectionVie
             
         } catch let err as NSError{
             print(err.debugDescription)
+            
         }
         
     }
@@ -47,9 +56,13 @@ class ViewController: UIViewController, UICollectionViewDelegate,UICollectionVie
         if let cell = collectionView.dequeueReusableCellWithReuseIdentifier("pokeid", forIndexPath: indexPath) as? pokeCell
         {
            
-            cell.confquerCell(pokemon[indexPath.row])
-            
-            return cell
+            if inSearchmode {
+                cell.confquerCell(fpokemon[indexPath.row])
+            }else{
+                cell.confquerCell(pokemon[indexPath.row])
+ 
+            }
+           return cell
             
         }else
         {
@@ -62,11 +75,29 @@ class ViewController: UIViewController, UICollectionViewDelegate,UICollectionVie
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath)
     {
         print("click \(indexPath.row)")
+        
+        let epoke: poke!
+        
+        if inSearchmode {
+            
+            epoke = fpokemon[indexPath.row]
+            
+        }else{
+            epoke = pokemon[indexPath.row]
+        }
+        
+        performSegueWithIdentifier("detail", sender: epoke)
+        
+        
     }
     
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 718
+        
+        if inSearchmode{
+            return fpokemon.count
+        }
+        return pokemon.count
         
     }
     
@@ -76,8 +107,49 @@ class ViewController: UIViewController, UICollectionViewDelegate,UICollectionVie
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
         return CGSize(width: 105, height: 105)
+    }
+    
+    func searchBarSearchButtonClicked(searchBar: UISearchBar) {
+        view.endEditing(true)
+    }
+    func searchBar(searchBar: UISearchBar, textDidChange searchText: String) {
+        
+        if searchbar.text == nil || searchbar.text == "" {
+            inSearchmode = false
+            view.endEditing(true)
+            collection.reloadData()
+            
+        }else{
+            inSearchmode = true
+            
+            let lower = searchbar.text!.lowercaseString
+            fpokemon = pokemon.filter({$0.name.rangeOfString(lower) != nil })
+            collection.reloadData()
+            
+        }
+        
         
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "detail"
+        {
+           if let aa = segue.destinationViewController as? detail
+           {
+            if let pp = sender as? poke{
+                aa.pokemon = pp
+                
+            }
+           }
+        }
+    }
+    
+    
+    
+    
+    
+    
+    
     
     
   
