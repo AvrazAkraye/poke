@@ -106,7 +106,7 @@ class ViewController: UIViewController, UICollectionViewDelegate,UICollectionVie
     }
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
-        return CGSize(width: 105, height: 105)
+        return CGSize(width: 88, height: 88)
     }
     
     func searchBarSearchButtonClicked(searchBar: UISearchBar) {
